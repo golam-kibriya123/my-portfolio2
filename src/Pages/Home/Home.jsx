@@ -10,6 +10,8 @@ import { FaFileDownload } from 'react-icons/fa';
 import Skills from "../../Components/Skills/Skills";
 import Contact from "../../Components/Contact/Contact";
 import resume from '../../assets/resume-of-Golam-Kibriya.pdf'
+import Footer from "../../Components/Footer/Footer";
+import Projects from "../../Components/Projects/Projects";
 
 const Home = () => {
     useEffect(() => {
@@ -17,9 +19,12 @@ const Home = () => {
     }, [])
     return (
         <div>
+            <div id="home">
+
+            </div>
 
             {/* side social media bar */}
-            <div className=" sticky top-0">
+            <div className=" sticky top-0 z-40">
                 <div data-aos="fade-right"
                     data-aos-duration="800"
                     className="absolute md:top-[450px] top-[370px] ">
@@ -51,8 +56,9 @@ const Home = () => {
             <HomeBanner></HomeBanner>
             <AboutMe></AboutMe>
             <Skills></Skills>
-
+            <Projects></Projects>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };
