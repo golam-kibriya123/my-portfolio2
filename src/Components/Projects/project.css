@@ -1,0 +1,46 @@
+.p-container {
+    display: flex;
+
+
+}
+
+.p-card {
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-card>img {
+    height: 500px;
+    width: 300px;
+    border-radius: 3px;
+
+}
+
+.p-intro {
+    height: 70px;
+    width: 300px;
+    box-sizing: border-box;
+    position: absolute;
+    padding: 6px;
+    background: rgba(118, 78, 249, .8);
+    color: white;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.p-intro>h1 {
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+.p-card:hover .p-intro {
+    cursor: pointer;
+    height: 300px;
+    background: rgba(117, 78, 249, .9);
+    transition: .5s;
+}
